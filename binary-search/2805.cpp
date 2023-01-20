@@ -31,7 +31,7 @@ int main() {
         if(m <= sum) {
             s = mid + 1;
             h = mid;
-        }else if(m > sum) { 
+        }else { //! else
             e = mid - 1;
         }
     }
