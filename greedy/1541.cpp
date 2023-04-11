@@ -10,7 +10,6 @@ int main() {
 
     int i = 0;
     int ans = 0;
-    bool isAdd = false;
     bool isMinus = false;
 
     int sum = 0;
