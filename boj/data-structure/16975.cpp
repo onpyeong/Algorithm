@@ -22,7 +22,7 @@ void update_lazy(int node, int start, int end) {
 	if (lazy[node] != 0) {
 		tree[node] += lazy[node] * (end - start + 1);
 		if (start != end) {
-			lazy[node * 2] += lazy[node];
+			lazy[node * 2] += lazy[node]; //lazy값은 더해줌
 			lazy[node * 2 + 1] += lazy[node];
 		}
 		lazy[node] = 0;
@@ -36,7 +36,7 @@ void update_range(int node, int start, int end, int left, int right, int value) 
 	if (left <= start && end <= right) {
 		tree[node] += value * (end - start + 1);
 		if (start != end) {
-			lazy[node * 2] += value;
+			lazy[node * 2] += value; //lazy에 변화시킬 값 더해줌
 			lazy[node * 2 + 1] += value;
 		}
 		lazy[node] = 0;
