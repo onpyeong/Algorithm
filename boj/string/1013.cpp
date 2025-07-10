@@ -1,3 +1,34 @@
+/*
+// c++ regex 사용하기
+#include <iostream>
+#include <regex>
+
+using namespace std;
+
+int T;
+string s;
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    
+    regex pattern("(100+1+|01)+"); // 정규표현식
+    
+    cin >> T;
+    for(int i = 0; i < T; i++) {
+      cin >> s;
+      if(regex_match(s, pattern)) { // 문자열 s가 pattern과 일치하는지
+        cout << "YES\n";
+      }else {
+        cout << "NO\n";
+      }
+    }
+    
+    return 0;
+}
+*/
+
+
 #include <iostream>
 
 using namespace std;
