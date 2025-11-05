@@ -54,7 +54,7 @@ int main()
     cin >> T;
     for(int i = 0; i < T; i++) {
       cin >> A >> B;
-      cout << bfs() << "\n";
+      cout << bfs() << '\n';
     }
     return 0;
 }
